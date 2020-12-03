@@ -111,10 +111,10 @@ verseI = \lyricmode {
   <<
     \new ChordNames {
       \set chordChanges = ##t
-      \harmonies
+      \transpose c g \harmonies
     }
     \new Staff {
-        \context Voice = "voiceMelody" { \melody }
+        \context Voice = "voiceMelody" { \transpose c' g \melody }
     }
     \new Lyrics = "lyricsI" {
       \lyricsto voiceMelody \verseI
